@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <title>පෝරමය</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form-container">
+    <h2>පොදුගැලපෙන තොරතුරු</h2>
+    <div class="progress">
+      <span>ලියාදීම 25% සම්පුර්ණයි</span>
+      <div class="steps">
+        <div class="step active">1</div>
+        <div class="step">2</div>
+        <div class="step">3</div>
+        <div class="step">4</div>
+      </div>
+    </div>
+
+    <form>
+      <label>මුල් නම</label>
+      <input type="text" name="firstName" required>
+
+      <label>අවසන් නම</label>
+      <input type="text" name="lastName" required>
+
+      <label>උපන්දිනය *</label>
+      <input type="date" name="dob" required>
+
+      <label>ජාතික හැඳුනුම්පත් අංකය *</label>
+      <input type="text" name="nic" required>
+
+      <label>විවාහක/අවිවාහක තත්ත්වය *</label>
+      <select name="maritalStatus" required>
+        <option value="">තෝරන්න</option>
+        <option value="single">අවිවාහක</option>
+        <option value="married">විවාහක</option>
+      </select>
+
+      <button type="submit">ඊළඟ</button>
+    </form>
+  </div>
+</body>
+</html>
