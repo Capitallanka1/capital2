@@ -5,8 +5,10 @@ body {
 }
 
 .form-container {
-  max-width: 400px;
+  max-width: 600px;
+  width: 90%;
   margin: auto;
+  padding: 20px;
 }
 
 h2 {
