@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>හැඳුනුම්පත් සහ සෙල්ෆි</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="form-container">
+    <h2>හැඳුනුම්පත් සහ සෙල්ෆි</h2>
+    <div class="progress">
+      <span>ලියාදීම 75% සම්පුර්ණයි</span>
+      <div class="steps">
+        <div class="step completed">1</div>
+        <div class="step completed">2</div>
+        <div class="step active">3</div>
+        <div class="step">4</div>
+      </div>
+    </div>
+
+    <form>
+      <label>හැඳුනුම්පත් fram-pata *</label>
+      <input type="file" accept="image/*" required />
+
+      <label>හැඳුනුම්පත් piṭipāṭa *</label>
+      <input type="file" accept="image/*" required />
+
+      <label>හැඳුනුම්පත් සමඟ selfie *</label>
+      <input type="file" accept="image/*" required />
+
+      <div class="form-buttons">
+        <button type="button" onclick="goToStep2()">පසුගිය</button>
+        <button type="button" onclick="goToStep4()">ඊළඟ</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function goToStep2() {
+      window.location.href = "step2.html";
+    }
+
+    function goToStep4() {
+      window.location.href = "step4.html";
+    }
+  </script>
+</body>
+</html>

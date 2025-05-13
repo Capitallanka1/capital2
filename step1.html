@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>පුද්ගලික විස්තර</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="form-container">
+    <h2>පුද්ගලික විස්තර</h2>
+    <div class="progress">
+      <span>ලියාදීම 20% සම්පුර්ණයි</span>
+      <div class="steps">
+        <div class="step active">1</div>
+        <div class="step">2</div>
+        <div class="step">3</div>
+        <div class="step">4</div>
+        <div class="step">5</div>
+      </div>
+    </div>
+
+    <form>
+      <label>මුල් නම *</label>
+      <input type="text" name="firstName" required>
+
+      <label>අවසන් නම *</label>
+      <input type="text" name="lastName" required>
+
+      <label>ඇඳීමට ලිපිනය *</label>
+      <input type="text" name="address" required>
+
+      <div class="form-buttons">
+        <button type="button" onclick="goToStep2()">ඊළඟ</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function goToStep2() {
+      window.location.href = "step2.html";
+    }
+  </script>
+</body>
+</html>
