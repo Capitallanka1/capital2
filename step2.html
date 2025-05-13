@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ලිපින තොරතුරු</title>
+  <title>පදිංචි තොරතුරු</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  ...
   <div class="form-container">
-    <h2>ලිපින තොරතුරු</h2>
+    <h2>පදිංචි තොරතුරු</h2>
     <div class="progress">
       <span>ලියාදීම 50% සම්පුර්ණයි</span>
       <div class="steps">
@@ -21,32 +20,32 @@
     </div>
 
     <form>
-      <label>නිවසේ ලිපිනය *</label>
-      <input type="text" name="address" required>
+      <label>ලිපිනය *</label>
+      <input type="text" required>
 
       <label>නගරය *</label>
-      <input type="text" name="city" required>
+      <input type="text" required>
 
-      <label>ප්‍රාදේශීය ලේකම් කොට්ඨාශය *</label>
-      <input type="text" name="division" required>
+      <label>දිස්ත්‍රික්කය *</label>
+      <input type="text" required>
 
-      <label>තැපැල් කේතය *</label>
-      <input type="text" name="postalCode" required>
+      <label>දුරකථන අංකය *</label>
+      <input type="text" required>
 
       <div class="form-buttons">
-        <button type="button" onclick="goBack()">පසුගිය</button>
+        <button type="button" onclick="goToStep1()">පසුගිය</button>
         <button type="button" onclick="goToStep3()">ඊළඟ</button>
       </div>
     </form>
   </div>
 
   <script>
-    function goBack() {
-      window.location.href = "index.html";
+    function goToStep1() {
+      window.location.href = "step1.html";
     }
 
     function goToStep3() {
-      window.location.href = "step3.html"; // step3.html add karanna one
+      window.location.href = "step3.html";
     }
   </script>
 </body>
