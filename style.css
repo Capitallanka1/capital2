@@ -1,45 +1,12 @@
-.form-container {
-  max-width: 600px;
-  width: 90%;
-  margin: auto;
-  padding: 20px;
-  font-family: sans-serif;
-}
 
-.steps {
-  display: flex;
-  justify-content: space-between;
-  margin: 20px 0;
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f9f9f9;
 }
-
-.step {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: #ccc;
-  color: white;
-  text-align: center;
-  line-height: 30px;
-}
-
-.step.active {
-  background: #00b894;
-}
-
-.step.completed {
-  background: #0984e3;
-}
-
-input, select, button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-}
-
-button {
-  background-color: #00b894;
-  color: white;
-  border: none;
-  cursor: pointer;
+form {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    max-width: 400px;
 }
